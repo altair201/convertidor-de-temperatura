@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="container_title">Convertidor de Temperatura</h1>
+        <div class="container_datos">
+            <div class="cton">
+                <input class="write" type="number" id="valnum">
+                <div class="check">
+                    <label for="tipo">F-C <input type="radio" id="tipo" name="grado"></label>
+                    
+                    <label for="tipo2">C-F <input type="radio" id="tipo2" name="grado"></label>
+                    
+                </div>
+            </div>
+            <div class="valor" id="vista"></div>
+            <button class="btn" onclick="convertir()">Convertir</button>
+        </div>
+        <div class="container_barra">
+            <div class="container_sub">
+                <p id="info"></p>
+                <div class="container_termometro">
+                    <div class="mercurio" id="mercuri">
+
+                    </div>
+                </div>
+                <p>0</p>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

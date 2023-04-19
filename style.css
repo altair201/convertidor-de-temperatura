@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+}
+.container{
+    height: 65%;
+    width: 40%;
+    border: solid 3px orangered;
+    border-radius: 15px;
+    box-shadow: 3px 10px 30px;
+    display: grid;
+    grid-template-areas:"container_title container_title"
+    "container_datos container_barra" ;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+.container_title{
+    display: grid;
+    place-items: center;
+    grid-area: container_title;
+}
+.container_datos{
+    display: grid;
+    place-items: center;
+    grid-area: container_datos;
+}
+.write{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.check{
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+.valor{
+    height: 80px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    border: solid 2px;
+    border-radius: 15px;
+    font-size: 2rem;
+    transition: 1s ease;
+}
+.btn{
+    height: 80px;
+    width: 200px;
+    font-size: 1.5rem;
+    transition: 1s ease;
+    border-radius: 15px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: aqua;
+    box-shadow: 5px 5px 10px ;
+}
+.container_barra{
+    display: grid;
+    place-items: center;
+    grid-area: container_barra;
+}
+.container_sub{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.container_termometro{
+    height: 300px;
+    width: 40px;
+    border: solid 2px red;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+.mercurio{
+    width: 100%;
+    background-color: blue;
+    transition: 2s ease;
+}
